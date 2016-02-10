@@ -1,2 +1,5 @@
-    return InlineSVG;
+    return {
+        InlineSVG: InlineSVG,
+        SVGCache: SVGCache
+    }
 });

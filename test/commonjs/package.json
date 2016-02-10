@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "browserify main.js -o bundle.js"
+    "build": "browserify main.js -o bundle.js",
+    "reload": "npm uninstall react-inline-svg; npm install ../../"
   },
   "devDependencies": {
     "browserify": "^12.0.0",

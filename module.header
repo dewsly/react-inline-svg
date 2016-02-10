@@ -4,6 +4,8 @@
     } else if (typeof module !== "undefined" && module.exports) {
         module.exports = factory(require("react"), require("jquery"));
     } else {
-        window.InlineSVG = factory(window.React, window.jQuery);
+        var component = factory(window.React, window.jQuery);
+        window.InlineSVG = component.InlineSVG;
+        window.SVGCache = component.SVGCache;
     }
 })(function (React, jQuery) {
